@@ -1,0 +1,54 @@
+<div class="main-container">
+  <div class="Vertical-line"></div>
+  <div id="firstdd">
+<mat-form-field appearance="fill">
+  <div [class]="selection1"></div>
+  <mat-label>Favorite food</mat-label>
+  <mat-select [(ngModel)]="selectedValue1" name="food" (selectionChange)="firstselect()">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+
+<div id="Second-dd">
+<mat-form-field appearance="fill">
+  <div [class]="selection2"></div>
+  <mat-label>Favorite food</mat-label>
+  <mat-select [(ngModel)]="selectedValue2" name="food" (selectionChange)="secondselect()">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+
+<div id="Third-dd">
+<mat-form-field appearance="fill">
+  <div [class]="selection3"></div>
+  <mat-label>Favorite food</mat-label>
+  <mat-select [(ngModel)]="selectedValue3" name="food" (selectionChange)="thirdselect()">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+</div>
+
+<div>
+  <p>First Selection : {{selectedValue1}} </p> <p>Second Selection : {{selectedValue2}} </p> <p>Third Selection : {{selectedValue3}} </p>
+</div>
+
+<ng-img-magnifier thumbImage='/assets/images/0001.jpg'
+    fullImage='/assets/images/0001.jpg'
+    top='90' 
+    right='1'
+    lensWidth='30' 
+    lensHeight='30'
+    resultWidth='40' 
+    resultHeight='45'
+    imgWidth='100' 
+    imgHeight='120'>
+</ng-img-magnifier>

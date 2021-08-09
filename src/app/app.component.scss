@@ -1,0 +1,50 @@
+.main-container{
+margin-left: 10px;
+}
+
+.Vertical-line{
+    position: absolute;
+    z-index: 4;
+    margin-top: 25px;
+    width: 1.5px;
+    background-color: red;
+    height: 145px;
+    float: left;
+}
+
+.checkmark:after{
+    //content: "✔";
+    content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' fill='white'  viewBox='0 0 24 24'%3E%3Cpath d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E");
+    z-index: 5;
+    position: absolute;
+    left: -19px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 30%);
+    
+
+}
+
+.uncheckmark:after{
+    content: " ";
+    z-index: 5;
+    position: absolute;
+    left: -19px;
+    top: -4px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 30%);
+    
+
+}
+
